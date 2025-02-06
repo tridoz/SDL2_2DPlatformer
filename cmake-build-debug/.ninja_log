@@ -1,0 +1,21 @@
+# ninja log v6
+13	827	1737789139127666755	CMakeFiles/SDL2_2DPlatformer.dir/src/Inventory.cpp.o	706d821eb4d7b88d
+5	409	1736450432767478920	CMakeFiles/SDL2_2DPlatformer.dir/Level_Parser_Object.cpp.o	e61a31ec392c0664
+7	956	1736450432768478941	CMakeFiles/SDL2_2DPlatformer.dir/Platform_Block.cpp.o	be7a2c3c54355c62
+10	1547	1737789139124666808	CMakeFiles/SDL2_2DPlatformer.dir/src/Game_Engine.cpp.o	8dcc88047c12ce1d
+5	1582	1737018318652990016	CMakeFiles/SDL2_2DPlatformer.dir/Game_Engine.cpp.o	7867391ac7e2d363
+2	779	1737054788290302154	CMakeFiles/SDL2_2DPlatformer.dir/src/FPSCounter.cpp.o	bc903df9cd1e7b10
+2	249	1737018608858506477	CMakeFiles/SDL2_2DPlatformer.dir/Inventory.cpp.o	4b8e3e6e5bbca3fc
+3	689	1736760942889349121	CMakeFiles/SDL2_2DPlatformer.dir/FPSCounter.cpp.o	8e6a9bfe41a2a030
+9	484	1736888501467659213	CMakeFiles/SDL2_2DPlatformer.dir/Collidable.cpp.o	f78cba40af21c377
+6	987	1736450432767478920	CMakeFiles/SDL2_2DPlatformer.dir/Sprite.cpp.o	28d31e55c32cf1b0
+12	878	1737789139126666773	CMakeFiles/SDL2_2DPlatformer.dir/src/Player.cpp.o	d7ca2558de0a92bc
+1547	1719	1737789140661640044	SDL2_2DPlatformer	962529a8e932d779
+5	814	1737018318652990016	CMakeFiles/SDL2_2DPlatformer.dir/Player.cpp.o	41a7c9c711a3432e
+2	454	1736972056834122237	CMakeFiles/SDL2_2DPlatformer.dir/Level_Parserer.cpp.o	c8c05c5210ede081
+7	896	1736450432768478941	CMakeFiles/SDL2_2DPlatformer.dir/Obstacle.cpp.o	e2e6dafaef3e91f3
+6	1048	1736450432767478920	CMakeFiles/SDL2_2DPlatformer.dir/Enemy.cpp.o	fd0694853441f522
+5	781	1736450432766478898	CMakeFiles/SDL2_2DPlatformer.dir/Level_Parser.cpp.o	e2effe06eb0bc2bf
+1	26	1738415952435447229	build.ninja	c9453ae7e4ebacc1
+9	1240	1737789139123666825	CMakeFiles/SDL2_2DPlatformer.dir/main.cpp.o	64fd5c1d8d12782c
+2	516	1737054788290302154	CMakeFiles/SDL2_2DPlatformer.dir/src/Level_Parserer.cpp.o	306f637149811dd7

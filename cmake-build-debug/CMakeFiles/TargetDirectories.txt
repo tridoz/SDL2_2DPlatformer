@@ -1,0 +1,3 @@
+/home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug/CMakeFiles/SDL2_2DPlatformer.dir
+/home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
