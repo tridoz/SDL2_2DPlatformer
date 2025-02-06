@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/trida/Desktop/IDE/clion/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/home/trida/Desktop/IDES/clion/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/trida/Desktop/IDE/clion/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/home/trida/Desktop/IDES/clion/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/trida/Desktop/IDE/clion/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/home/trida/Desktop/IDES/clion/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/trida/Desktop/IDE/clion/bin/ninja/linux/x64/ninja"
+			"value" : "/home/trida/Desktop/IDES/clion/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/trida/Desktop/IDE/clion/bin/cmake/linux/x64/share/cmake-3.30"
+			"value" : "/home/trida/Desktop/IDES/clion/bin/cmake/linux/x64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1202,18 +1202,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/SDL2_image"
 		},
 		{
-			"name" : "SDL2_mixer_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for SDL2_mixer."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/cmake/SDL2_mixer"
-		},
-		{
 			"name" : "SDL2_ttf_DIR",
 			"properties" : 
 			[
@@ -1224,18 +1212,6 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/SDL2_ttf"
-		},
-		{
-			"name" : "SDL_2_ttf_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for SDL_2_ttf."
-				}
-			],
-			"type" : "PATH",
-			"value" : "SDL_2_ttf_DIR-NOTFOUND"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

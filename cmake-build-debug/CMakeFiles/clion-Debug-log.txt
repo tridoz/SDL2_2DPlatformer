@@ -1,4 +1,4 @@
-/home/trida/Desktop/IDE/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/trida/Desktop/IDE/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/trida/CLionProjects/SDL2_2DPlatformer -B /home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug
+/home/trida/Desktop/IDES/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/trida/Desktop/IDES/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/trida/CLionProjects/SDL2_2DPlatformer -B /home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/trida/CLionProjects/SDL2_2DPlatformer/cmake-build-debug

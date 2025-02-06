@@ -5,7 +5,7 @@
 
 int main(int argc, char** argv) {
     Game_Engine game_engine("Game", 1536, 1024);
-
+    //ciao
     game_engine.Init();
 
     if ( game_engine.errorHasOccurred() ) {
