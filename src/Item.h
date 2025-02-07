@@ -10,6 +10,7 @@ protected:
 
     SDL_Rect src_rect;
     SDL_Rect dest_rect;
+
     SDL_Texture* icon_texture;
 
     std::vector<SDL_Texture*> animation_textures;
@@ -68,44 +69,44 @@ public:
 
     SDL_Rect *getSrcRect();
     SDL_Rect *getDestRect();
-    SDL_Texture* getIconTexture();
+    [[nodiscard]] SDL_Texture* getIconTexture() const;
     std::vector<SDL_Texture*>* getAnimationTextures();
 };
 
 class ArmorPiece: public Item {
     public:
     ArmorPiece();
-    float getPhysicalResistance();
-    float getFireResistance();
-    float getIceResistance();
-    float getShockResistance();
-    float getHolyResistance();
-    float getChaosResistance();
+    [[nodiscard]] float getPhysicalResistance() const;
+    [[nodiscard]] float getFireResistance() const;
+    [[nodiscard]] float getIceResistance() const;
+    [[nodiscard]] float getShockResistance() const;
+    [[nodiscard]] float getHolyResistance() const;
+    [[nodiscard]] float getChaosResistance() const;
 
-    float getCriticalDamageBuff();
-    float getCriticalChanceBuff();
-    float getAttackSpeedBuff();
-    float getResourcesCostBuff();
-    float getRecoveryTimeBuff();
+    [[nodiscard]] float getCriticalDamageBuff() const;
+    [[nodiscard]] float getCriticalChanceBuff() const;
+    [[nodiscard]] float getAttackSpeedBuff() const;
+    [[nodiscard]] float getResourcesCostBuff() const;
+    [[nodiscard]] float getRecoveryTimeBuff() const;
 
-    float getWeigth();
-    float getPoise();
+    [[nodiscard]] float getWeight() const;
+    [[nodiscard]] float getPoise() const;
 
-    float getVigor();
-    float getMind();
-    float getEndurance();
-    float getStrength();
-    float getDexterity();
-    float getIntelligence();
-    float getFaith();
-    float getArcane();
+    [[nodiscard]] float getVigor() const;
+    [[nodiscard]] float getMind() const;
+    [[nodiscard]] float getEndurance() const;
+    [[nodiscard]] float getStrength() const;
+    [[nodiscard]] float getDexterity() const;
+    [[nodiscard]] float getIntelligence() const;
+    [[nodiscard]] float getFaith() const;
+    [[nodiscard]] float getArcane() const;
 
-    float getPhysicalDamageBuff();
-    float getFireDamageBuff();
-    float getIceDamageBuff();
-    float getShockDamageBuff();
-    float getHolyDamageBuff();
-    float getChaosDamageBuff();
+    [[nodiscard]] float getPhysicalDamageBuff() const;
+    [[nodiscard]] float getFireDamageBuff() const;
+    [[nodiscard]] float getIceDamageBuff() const;
+    [[nodiscard]] float getShockDamageBuff() const;
+    [[nodiscard]] float getHolyDamageBuff() const;
+    [[nodiscard]]float getChaosDamageBuff() const;
 
     
 };
@@ -113,6 +114,17 @@ class ArmorPiece: public Item {
 class Spell: public Item {
     public:
     Spell();
+    [[nodiscard]] float getPhysicalDamage() const;
+    [[nodiscard]] float getFireDamage() const;
+    [[nodiscard]] float getIceDamage() const;
+    [[nodiscard]] float getShockDamage() const;
+    [[nodiscard]] float getHolyDamage() const;
+    [[nodiscard]] float getChaosDamage() const;
+
+    [[nodiscard]] float getCastingTime() const;
+    [[nodiscard]] float getRecoveryTime() const;
+    [[nodiscard]] float getHealthCost() const;
+    [[nodiscard]] float getManaCost() const;
 };
 
 

@@ -8,11 +8,15 @@
 #include <vector>
 #include <iostream>
 
+#include "Item.h"
+
 class Inventory {
 
-
-
     SDL_Rect background;
+
+    std::vector<Spell> spells{6};
+    std::vector<ArmorPiece> equippedArmors{11};
+    std::vector<Item> InventoryItems;
 
     int starting_x_item;
     int starting_y_item;
