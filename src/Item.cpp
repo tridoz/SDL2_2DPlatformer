@@ -13,6 +13,11 @@ Item::Item() {
     this->setAsArmorPiece();
 }
 
+Item::~Item() {
+
+}
+
+
 void Item::setAsSpell() {
     this->physical_resistance = 0;
     this->fire_resistance = 0;
