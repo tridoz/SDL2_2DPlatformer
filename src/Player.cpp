@@ -3,6 +3,7 @@
 #include <iostream>
 
 Player::Player() {
+    
     this->running = true;
 
     this->lastFrameTime = 0;

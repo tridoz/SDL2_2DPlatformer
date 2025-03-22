@@ -1,0 +1,397 @@
+<spells>
+    <type name="FIRE" texturePath="../Assets/Spells/Textures/Fire" width="64" height="64">
+        <spell name="EMBER_SPARK" id="0" level="10">
+            <P_DMG>2</P_DMG>
+            <F_DMG>20</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>12</M_CST>
+            <R_TIM>0.5</R_TIM>
+            <C_TIM>0.2</C_TIM>
+        </spell>
+        <spell name="FLAME_BURST" id="1" level="10">
+            <P_DMG>5</P_DMG>
+            <F_DMG>35</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>20</M_CST>
+            <R_TIM>1.5</R_TIM>
+            <C_TIM>1</C_TIM>
+        </spell>
+        <spell name="INFERNO_WAVE" id="2" level="10">
+            <P_DMG>10</P_DMG>
+            <F_DMG>55</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>35</M_CST>
+            <R_TIM>5</R_TIM>
+            <C_TIM>1.3</C_TIM>
+        </spell>
+        <spell name="PYROCLASM" id="3" level="10">
+            <P_DMG>20</P_DMG>
+            <F_DMG>80</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>60</M_CST>
+        </spell>
+        <spell name="BLAZING_TEMPEST" id="4" level="10">
+            <P_DMG>50</P_DMG>
+            <F_DMG>95</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>15</H_CST>
+            <M_CST>50</M_CST>
+        </spell>
+        <spell name="DRAGONS_WRATH" id="5" level="10">
+            <P_DMG>90</P_DMG>
+            <F_DMG>140</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>30</H_CST>
+            <M_CST>70</M_CST>
+        </spell>
+        <spell name="HELLFIRE_APOCALYPSE" id="6" level="10">
+            <P_DMG>150</P_DMG>
+            <F_DMG>210</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>100</H_CST>
+            <M_CST>150</M_CST>
+        </spell>
+    </type>
+
+    <type name="LIGHTNING" texturePath="../Assets/Spells/Textures/Lightning" width="64" height="64">
+        <spell name="STATIC_SHOCK" id="0" level="10">
+            <P_DMG>2</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>20</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>12</M_CST>
+            <R_TIM>0.5</R_TIM>
+            <C_TIM>0.2</C_TIM>
+        </spell>
+        <spell name="THUNDER_JOLT" id="1" level="10">
+            <P_DMG>5</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>35</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>20</M_CST>
+            <R_TIM>1.5</R_TIM>
+            <C_TIM>1</C_TIM>
+        </spell>
+        <spell name="VOLT_STRIKE" id="2" level="10">
+            <P_DMG>10</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>55</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>35</M_CST>
+            <R_TIM>5</R_TIM>
+            <C_TIM>1.3</C_TIM>
+        </spell>
+        <spell name="STORM_SURGE" id="3" level="10">
+            <P_DMG>20</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>80</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>60</M_CST>
+        </spell>
+        <spell name="ARC_LIGHTNING" id="4" level="10">
+            <P_DMG>50</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>95</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>15</H_CST>
+            <M_CST>50</M_CST>
+        </spell>
+        <spell name="TEMPEST_FURY" id="5" level="10">
+            <P_DMG>90</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>140</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>30</H_CST>
+            <M_CST>70</M_CST>
+        </spell>
+        <spell name="WRATH_OF_THE_STORM_GOD" id="6" level="10">
+            <P_DMG>150</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>210</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>100</H_CST>
+            <M_CST>150</M_CST>
+        </spell>
+    </type>
+
+    <type name="ICE" texturePath="../Assets/Spells/Textures/Ice" width="64" height="64">
+        <spell name="FROSTBITE" id="0" level="10">
+            <P_DMG>2</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>20</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>12</M_CST>
+            <R_TIM>0.5</R_TIM>
+            <C_TIM>0.2</C_TIM>
+        </spell>
+        <spell name="ICICLE_SPEAR" id="1" level="10">
+            <P_DMG>5</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>35</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>20</M_CST>
+            <R_TIM>1.5</R_TIM>
+            <C_TIM>1</C_TIM>
+        </spell>
+        <spell name="GLACIAL_BLAST" id="2" level="10">
+            <P_DMG>10</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>55</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>35</M_CST>
+            <R_TIM>5</R_TIM>
+            <C_TIM>1.3</C_TIM>
+        </spell>
+        <spell name="ARTIC_WAVE" id="3" level="10">
+            <P_DMG>20</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>80</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>60</M_CST>
+        </spell>
+        <spell name="FROZEN_TOMB" id="4" level="10">
+            <P_DMG>50</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>95</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>15</H_CST>
+            <M_CST>50</M_CST>
+        </spell>
+        <spell name="ICE_DRAGON_FURY" id="5" level="10">
+            <P_DMG>90</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>140</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>30</H_CST>
+            <M_CST>70</M_CST>
+        </spell>
+        <spell name="BLIZZARD_WRATH" id="6" level="10">
+            <P_DMG>150</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>210</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>100</H_CST>
+            <M_CST>150</M_CST>
+        </spell>
+    </type>
+
+    <type name="HOLY" texturePath="../Assets/Spells/Textures/Holy" width="64" height="64">
+        <spell name="HOLY_LIGHT" id="0" level="10">
+            <P_DMG>2</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>20</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>12</M_CST>
+            <R_TIM>0.5</R_TIM>
+            <C_TIM>0.2</C_TIM>
+        </spell>
+        <spell name="DIVINE_BLESSING" id="1" level="10">
+            <P_DMG>5</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>35</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>20</M_CST>
+            <R_TIM>1.5</R_TIM>
+            <C_TIM>1</C_TIM>
+        </spell>
+        <spell name="HOLY_SMITE" id="2" level="10">
+            <P_DMG>10</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>55</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>35</M_CST>
+            <R_TIM>5</R_TIM>
+            <C_TIM>1.3</C_TIM>
+        </spell>
+        <spell name="HOLY_LIGHTNING" id="3" level="10">
+            <P_DMG>20</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>80</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>60</M_CST>
+        </spell>
+        <spell name="DIVINE_WRATH" id="4" level="10">
+            <P_DMG>50</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>95</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>15</H_CST>
+            <M_CST>50</M_CST>
+        </spell>
+        <spell name="HEAVENLY_STRIKE" id="5" level="10">
+            <P_DMG>90</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>140</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>30</H_CST>
+            <M_CST>70</M_CST>
+        </spell>
+        <spell name="ANGELIC_APOCALYPSE" id="6" level="10">
+            <P_DMG>150</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>210</H_DMG>
+            <C_DMG>0</C_DMG>
+            <H_CST>100</H_CST>
+            <M_CST>150</M_CST>
+        </spell>
+    </type>
+
+    <type name="CHAOS" texturePath="../Assets/Spells/Textures/Chaos" width="64" height="64">
+        <spell name="CHAOTIC_BLAST" id="0" level="10">
+            <P_DMG>2</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>20</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>12</M_CST>
+            <R_TIM>0.5</R_TIM>
+            <C_TIM>0.2</C_TIM>
+        </spell>
+        <spell name="VOID_STRIKE" id="1" level="10">
+            <P_DMG>5</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>35</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>20</M_CST>
+            <R_TIM>1.5</R_TIM>
+            <C_TIM>1</C_TIM>
+        </spell>
+        <spell name="ENTROPY_BLAST" id="2" level="10">
+            <P_DMG>10</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>55</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>35</M_CST>
+            <R_TIM>5</R_TIM>
+            <C_TIM>1.3</C_TIM>
+        </spell>
+        <spell name="CORRUPTED_RAGE" id="3" level="10">
+            <P_DMG>20</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>80</C_DMG>
+            <H_CST>0</H_CST>
+            <M_CST>60</M_CST>
+        </spell>
+        <spell name="CHAOS_FURY" id="4" level="10">
+            <P_DMG>50</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>95</C_DMG>
+            <H_CST>15</H_CST>
+            <M_CST>50</M_CST>
+        </spell>
+        <spell name="APOCALYPTIC_TIDE" id="5" level="10">
+            <P_DMG>90</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>140</C_DMG>
+            <H_CST>30</H_CST>
+            <M_CST>70</M_CST>
+        </spell>
+
+        <spell name="THE_ULTIMATE_CORRUPTION" id="6" level="10">
+            <P_DMG>150</P_DMG>
+            <F_DMG>0</F_DMG>
+            <I_DMG>0</I_DMG>
+            <S_DMG>0</S_DMG>
+            <H_DMG>0</H_DMG>
+            <C_DMG>210</C_DMG>
+            <H_CST>100</H_CST>
+            <M_CST>150</M_CST>
+        </spell>
+    </type>
+</spells>

@@ -14,9 +14,9 @@ Item::Item() {
 }
 
 Item::~Item() {
-
+    this->animation_textures.clear();
+    this->icon_texture = nullptr;
 }
-
 
 void Item::setAsSpell() {
     this->physical_resistance = 0;

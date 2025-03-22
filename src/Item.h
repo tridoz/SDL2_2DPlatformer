@@ -13,7 +13,8 @@ protected:
 
     SDL_Texture* icon_texture;
 
-    std::vector<SDL_Texture*> animation_textures;
+    std::vector<SDL_Texture*> animation_textures{10, nullptr};
+
 
     //SPELLS
     float physical_damage;
@@ -126,6 +127,7 @@ class Spell: public Item {
     [[nodiscard]] float getHealthCost() const;
     [[nodiscard]] float getManaCost() const;
 };
+
 
 
 #endif //ITEM_H

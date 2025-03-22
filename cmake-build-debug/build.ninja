@@ -101,7 +101,7 @@ build CMakeFiles/SDL2_2DPlatformer.dir/src/Item.cpp.o: CXX_COMPILER__SDL2_2DPlat
 
 build SDL2_2DPlatformer: CXX_EXECUTABLE_LINKER__SDL2_2DPlatformer_Debug CMakeFiles/SDL2_2DPlatformer.dir/main.cpp.o CMakeFiles/SDL2_2DPlatformer.dir/src/Game_Engine.cpp.o CMakeFiles/SDL2_2DPlatformer.dir/src/Player.cpp.o CMakeFiles/SDL2_2DPlatformer.dir/src/FPSCounter.cpp.o CMakeFiles/SDL2_2DPlatformer.dir/src/Inventory.cpp.o CMakeFiles/SDL2_2DPlatformer.dir/src/Item.cpp.o | /usr/lib/x86_64-linux-gnu/libSDL2.so
   FLAGS = -g
-  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libSDL2.so  -lSDL2_image  -lSDL2_ttf
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libSDL2.so  -lpugixml  -lSDL2_image  -lSDL2_ttf
   OBJECT_DIR = CMakeFiles/SDL2_2DPlatformer.dir
   POST_BUILD = :
   PRE_LINK = :
