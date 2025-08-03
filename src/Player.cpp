@@ -9,7 +9,7 @@ Player::Player() {
     this->lastFrameTime = 0;
     this->frameDelay = 75;
 
-    this->current_state = IDLE;
+    this->current_state = PLAYER_STATUS::IDLE;
 
     this->currentX = 0;
     this->currentY = 0;
@@ -63,7 +63,7 @@ void Player::spawn(int x, int y) {
 void Player::updateAnimationFrame(SDL_Renderer* renderer) {
 
     if (this->sprite == nullptr) {
-        this->sprite = IMG_LoadTexture(renderer, "../Assets/Player/animations.png");
+        this->sprite = IMG_LoadTexture(renderer, "../Assets/Player/Movement/animations.png");
         if (!this->sprite) {
             std::cout << "Failed Texture Loading" << IMG_GetError() << std::endl;
             return;
@@ -75,7 +75,7 @@ void Player::updateAnimationFrame(SDL_Renderer* renderer) {
         this->animation_index++;
         this->lastFrameTime = currentTime;
 
-        if (this->current_state == IDLE) {
+        if (this->current_state == PLAYER_STATUS::IDLE) {
             switch (this->direction) {
                 case 1:  // up
                     this->animation_index %= this->up_idle.size();
@@ -94,7 +94,7 @@ void Player::updateAnimationFrame(SDL_Renderer* renderer) {
             }
         }
 
-        else if (this->current_state == RUN) {
+        else if (this->current_state == PLAYER_STATUS::RUN) {
             switch (this->direction) {
                 case 1:  // up
                     this->animation_index %= this->up_run.size();
@@ -116,7 +116,7 @@ void Player::updateAnimationFrame(SDL_Renderer* renderer) {
 
     SDL_Rect *srcRect = nullptr;
     switch (this->current_state) {
-        case IDLE:
+        case PLAYER_STATUS::IDLE:
             switch (this->direction) {
                 case 1:  // up
                     srcRect = &this->up_idle[this->animation_index % this->up_idle.size()];
@@ -135,7 +135,7 @@ void Player::updateAnimationFrame(SDL_Renderer* renderer) {
             }
             break;
 
-        case RUN:
+        case PLAYER_STATUS::RUN:
             switch (this->direction) {
                 case 1:  // up
                     srcRect = &this->up_run[this->animation_index % this->up_run.size()];
@@ -163,8 +163,6 @@ void Player::updateAnimationFrame(SDL_Renderer* renderer) {
     }
 }
 
-
-
 void Player::update(SDL_Renderer *renderer) {
 
 
@@ -174,7 +172,7 @@ void Player::update(SDL_Renderer *renderer) {
 
     if (distance >= this->speed) {
 
-        this->current_state = RUN;
+        this->current_state = PLAYER_STATUS::RUN;
         double dx = this->speed * cos(this->movement_angle);
         double dy = this->speed * sin(this->movement_angle);
 
@@ -183,7 +181,7 @@ void Player::update(SDL_Renderer *renderer) {
 
     }else {
 
-        this->current_state = IDLE;
+        this->current_state = PLAYER_STATUS::IDLE;
     }
 
     this->sprite_rect.x = this->currentX - this->sprite_rect.w / 2.0f;
@@ -202,7 +200,7 @@ bool Player::isAtDestination() const {
 }
 
 std::pair< bool, std::pair<std::string, std::string> > Player::loadAnimations() {
-    std::ifstream animationSheet("../Assets/Player/player_animation_sheet.txt");
+    std::ifstream animationSheet("../Assets/Player/Movement/player_animation_sheet.txt");
 
     std::string line;
     std::string current_section;
@@ -273,7 +271,6 @@ std::pair< bool, std::pair<std::string, std::string> > Player::loadAnimations() 
     return std::make_pair(true, std::pair<std::string, std::string>() );
 }
 
-
 SDL_Rect *Player::getSprite() {
     return &this->sprite_rect;
 }
@@ -299,6 +296,28 @@ void Player::setY(const double newY) {
 Inventory* Player::getInventory() {
     return &this->inventory;
 }
+
+
+
+
+void Player::primary_attack(int x, int y) {
+    this->current_state = PLAYER_STATUS::ATTACK_PRIMARY;
+}
+
+void Player::secondary_attack(int x, int y) {
+    this->current_state = PLAYER_STATUS::ATTACK_SECONDARY;
+}
+
+void Player::special_attack_one(int x, int y) {
+    this->current_state = PLAYER_STATUS::ATTACK_SPECIAL_ONE;
+}
+
+void Player::special_attack_two(int x, int y) {
+    this->current_state = PLAYER_STATUS::ATTACK_SPECIAL_TWO;
+}
+
+
+
 
 
 

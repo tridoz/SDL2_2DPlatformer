@@ -117,7 +117,7 @@ bool Game_Engine::errorHasOccurred() const {
 void Game_Engine::run() {
 
     this->player.spawn(400, 400);
-    this->player.getInventory()->load( this->game_renderer );
+    //this->player.getInventory()->load( this->game_renderer );
 
     std::cout << "Running Game Engine" << std::endl;
 
@@ -138,6 +138,8 @@ void Game_Engine::run() {
                 this->player.setY( this->new_player_y );
                 this->loadLevel();
                 this->player_previous_level = this->player_level;
+                this->enemy_manager.set_map(this->can_be_walked, 16, 24);
+                this->enemy_manager.generate_enemies(this->player_map, this->player_level);
             }
 
         }
@@ -145,6 +147,7 @@ void Game_Engine::run() {
         if ( this->inventory_displayed == false ) {
             this->renderLevel();
             this->player.update( this->game_renderer );
+            this->enemy_manager.print_enemies(this->game_renderer, this->player.getCurrentX(), this->player.getCurrentY());
         }else if ( this->inventory_displayed == true ) {
             this->player.getInventory()->render_inventory( this->game_renderer );
         }
@@ -163,8 +166,8 @@ void Game_Engine::run() {
 
                 if (this->game_event.button.button == SDL_BUTTON_LEFT) {
 
-                    int index_x = floor( game_event.button.x / 64  );
-                    int index_y = floor( game_event.button.y / 64  );
+                    int index_x = floor( this->game_event.button.x / 64  );
+                    int index_y = floor( this->game_event.button.y / 64  );
 
                     if ( this->can_be_walked[ index_y ][ index_x ] != -1 ) {
 
@@ -194,12 +197,40 @@ void Game_Engine::run() {
                 }
 
             }else if ( this->game_event.type == SDL_KEYDOWN ) {
-                if (this->game_event.key.keysym.scancode == SDL_SCANCODE_I) {
-                    this->inventory_displayed = !inventory_displayed;
-                }else if (this->game_event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
-                    if ( this->inventory_displayed == true ) {
-                        this->inventory_displayed = false;
-                    }
+                switch ( this->game_event.key.keysym.scancode ) {
+                    case SDL_SCANCODE_ESCAPE:
+                        if ( this->inventory_displayed == true ) {
+                            this->inventory_displayed = false;
+                        }else {
+                            this->game_running = false;
+                        }
+                        break;
+
+                    case SDL_SCANCODE_I:
+                        if ( this->inventory_displayed == true ) {
+                            this->inventory_displayed = false;
+                        }else if ( this->inventory_displayed == false ) {
+                            this->inventory_displayed = true;
+                        }
+                        break;
+
+                    case SDL_SCANCODE_Q:
+                        this->player.primary_attack( this->game_event.button.x, this->game_event.button.y );
+                        break;
+
+                    case SDL_SCANCODE_W:
+                        this->player.secondary_attack( this->game_event.button.x, this->game_event.button.y );
+                        break;
+
+                    case SDL_SCANCODE_E:
+                        this->player.special_attack_one( this->game_event.button.x, this->game_event.button.y );
+                        break;
+
+                    case SDL_SCANCODE_R:
+                        this->player.special_attack_two( this->game_event.button.x, this->game_event.button.y );
+                        break;
+
+
                 }
             }
 

@@ -43,7 +43,7 @@ protected:
     float resources_cost_buff;
     float recovery_time_buff;
     
-    float weigth;
+    float weight;
     float poise;
 
     float vigor;

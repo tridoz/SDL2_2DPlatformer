@@ -23,6 +23,18 @@ add_executable(SDL2_2DPlatformer main.cpp
         src/Inventory.h
         src/Item.cpp
         src/Item.h
+        src/Enemy.cpp
+        src/Enemy.h
+        src/enemies/Zombie.cpp
+        src/enemies/Zombie.h
+        src/enemies/Knight.cpp
+        src/enemies/Knight.h
+        src/enemies/Skeleton.cpp
+        src/enemies/Skeleton.h
+        src/enemies/Mage.cpp
+        src/enemies/Mage.h
+        src/Enemy_manager.cpp
+        src/Enemy_manager.h
 )
 
 # Collega le librerie necessarie

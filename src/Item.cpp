@@ -31,7 +31,7 @@ void Item::setAsSpell() {
     this->attack_speed_buff = 0;
     this->resources_cost_buff = 0;
     this->recovery_time_buff = 0;
-    this->weigth = 0;
+    this->weight = 0;
     this->poise = 0;
 
     this->vigor = 0;
@@ -132,7 +132,7 @@ float ArmorPiece::getRecoveryTimeBuff() const {
 }
 
 float ArmorPiece::getWeight() const {
-    return this->weigth;
+    return this->weight;
 }
 
 float ArmorPiece::getPoise() const {

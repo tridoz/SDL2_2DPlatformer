@@ -12,6 +12,7 @@
 #include <thread>
 #include <algorithm>
 
+#include "Enemy_manager.h"
 #include "Player.h"
 #include "FPSCounter.h"
 
@@ -22,6 +23,7 @@ private:
     //CUSTOM PARAMETERS
     Player player;
     FPSCounter frame_counter;
+    Enemy_manager enemy_manager;;
 
     int player_level = 1;
     int player_previous_level = 0;

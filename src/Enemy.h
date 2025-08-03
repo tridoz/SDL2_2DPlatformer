@@ -1,5 +1,9 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+//
+// Created by trida on 8/2/25.
+//
+
+#ifndef ENEMY_H
+#define ENEMY_H
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -12,19 +16,18 @@
 
 #include "Inventory.h"
 
-enum class PLAYER_STATUS {
+
+enum class ENEMY_STATUS{
     IDLE,
     RUN,
     ATTACK_PRIMARY,
     ATTACK_SECONDARY,
     ATTACK_SPECIAL_ONE,
     ATTACK_SPECIAL_TWO
-};
+} ;
 
-
-class Player {
-private:
-    // DRAW STUFF
+class Enemy {
+protected:
     SDL_Texture* sprite{};
     SDL_Rect sprite_rect{};
 
@@ -40,28 +43,11 @@ private:
     std::vector<SDL_Rect> up_run{};
     std::vector<SDL_Rect> left_run{};
 
-    //STATS
-    float nerves;
-    float nerves_needed;
-
-
     float health;
     float mana;
     float stamina;
 
-    float max_equip_load;
-
     float poise;
-    float discovery;
-
-    float vigor;
-    float mind;
-    float endurance;
-    float strength;
-    float dexterity;
-    float intelligence;
-    float faith;
-    float arcane;
 
     float physical_damage;
     float fire_damage;
@@ -82,7 +68,7 @@ private:
     Uint32 frameDelay;
 
     // PLAYER CONTROL
-    PLAYER_STATUS current_state;
+    ENEMY_STATUS current_state;
     bool running;
 
     double currentX;
@@ -98,16 +84,19 @@ private:
     int animation_index;
     int direction;
 
+    int red, green, blue;
+
+
+
     void updateAnimationFrame(SDL_Renderer *renderer);
 
 public:
-    
-    Player();
+    Enemy();
+    Enemy(int x, int y);
 
     void move(int x, int y);
     void update(SDL_Renderer* renderer);
 
-    void spawn(int x, int y);
     std::pair< bool, std::pair<std::string, std::string> >  loadAnimations();
 
     SDL_Rect* getSprite();
@@ -116,16 +105,14 @@ public:
     [[nodiscard]] double getCurrentX() const;
     [[nodiscard]] double getCurrentY() const;
 
-    void primary_attack(int x, int y);
-    void secondary_attack(int x, int y);
-    void special_attack_one(int x, int y);
-    void special_attack_two(int x, int y);
-
     void setX(double newX);
     void setY(double newY);
 
     Inventory* getInventory();
 
+
 };
 
-#endif //PLAYER_H
+
+
+#endif //ENEMY_H
